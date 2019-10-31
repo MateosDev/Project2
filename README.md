@@ -43,3 +43,6 @@ DTF (yes or no)
 
 
 
+Basic Compatability Chart 
+
+![CompatabilityChart](ZodiacSignBasicCompatability.png)
