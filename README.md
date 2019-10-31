@@ -6,7 +6,8 @@ Name ideas - Hookt, Hukt,
 Features- 
 
 *Sign up/Login (name, email,)
-*profile - Use Survery (phone number, astrological sign, age, location, etc)
+*profile - Use Survery (phone number, astrological sign, age, location, marital status)
+
 *new match feature (filter (age, location, sign), message, delete)
 *matches based on location, astrological compatibility
 
