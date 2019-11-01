@@ -22,6 +22,17 @@ module.exports = function(app) {
     });
   });
 
+
+// return user login
+  app.post("/api/user/login", function(req, res) {
+    db.User.findAll({ where: { first_name: req.body.first_name } }).then(function(dbUser) {
+    // once user logs in, their info is posted to front-end
+    location.replace("/user/"+dbUser.id)
+      res.json(dbUser);
+    });
+  });
+
+
   app.get("/api/user/:sign", function(req, res) {
     db.User.findAll({ where: { astrology_sign: req.params.sign } }).then(function(dbUser) {
       res.json(dbUser);
