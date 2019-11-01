@@ -1,0 +1,27 @@
+{
+  "name": "Project2",
+  "version": "1.0.0",
+  "description": "Group Project 2 - Daniel, Odufa, Maliah, and Oscar Name ideas - Hookt, Hukt,",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateosDev/Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateosDev/Project2/issues"
+  },
+  "homepage": "https://github.com/MateosDev/Project2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
