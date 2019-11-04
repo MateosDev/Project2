@@ -1,4 +1,6 @@
 var db = require("../models");
+var sdkClient = require('./horoscope');
+
 
 module.exports = function(app) {
   // Get all examples
@@ -38,6 +40,7 @@ module.exports = function(app) {
       res.json(dbUser);
     });
   });
+
 };
 
 // AstrologyAPI.com
