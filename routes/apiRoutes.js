@@ -2,20 +2,33 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
+<<<<<<< HEAD
   app.get("/api/user", function(req, res) {
     db.User.findAll({}).then(function(dbUser) {
       res.json(dbUser);
+=======
+  app.get("/api/examples", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.json(dbExamples);
+>>>>>>> 2594d9cb692536037ce8ec19b42b5b65eb31d0b1
     });
   });
 
   // Create a new example
+<<<<<<< HEAD
   app.post("/api/user", function(req, res) {
     db.User.create(req.body).then(function(dbUser) {
       res.json(dbUser);
+=======
+  app.post("/api/examples", function(req, res) {
+    db.Example.create(req.body).then(function(dbExample) {
+      res.json(dbExample);
+>>>>>>> 2594d9cb692536037ce8ec19b42b5b65eb31d0b1
     });
   });
 
   // Delete an example by id
+<<<<<<< HEAD
   app.delete("/api/user/:id", function(req, res) {
     db.User.destroy({ where: { id: req.params.id } }).then(function(dbUser) {
       res.json(dbUser);
@@ -49,3 +62,11 @@ module.exports = function(app) {
 // if I'm demonstrating the functionability of the app to someone, and I fill out the form, how do I then show them how I will be matched to someone
 // the api will be used to match compatible signs together and also show your your daily horoscope
 // should we use a match.com, tinder or bubmle api to get ppl if the database idea doesn't work
+=======
+  app.delete("/api/examples/:id", function(req, res) {
+    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
+      res.json(dbExample);
+    });
+  });
+};
+>>>>>>> 2594d9cb692536037ce8ec19b42b5b65eb31d0b1

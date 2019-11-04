@@ -2,3 +2,11 @@
 node_modules
 npm-debug.log
 .env
+<<<<<<< HEAD
+=======
+
+# next.js build output
+.next
+
+.DS_Store
+>>>>>>> 2594d9cb692536037ce8ec19b42b5b65eb31d0b1
