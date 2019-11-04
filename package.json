@@ -22,14 +22,10 @@
   },
   "homepage": "https://github.com/MateosDev/Project2#readme",
   "dependencies": {
-<<<<<<< HEAD
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "mysql2": "^2.0.0",
     "sequelize": "^5.21.2"
-=======
-    "express": "^4.17.1"
->>>>>>> 2594d9cb692536037ce8ec19b42b5b65eb31d0b1
   }
 }
