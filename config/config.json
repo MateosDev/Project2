@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
 
-      "password": "Section.80",
+      "password": "",
       "database": "people_db",
 
       "host": "localhost",
