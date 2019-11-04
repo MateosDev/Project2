@@ -54,10 +54,6 @@ p:last-child {
     margin: 0px; 
 }
 
-ul, ol {
-
- }
-
 a { 
     text-decoration: none; 
     color: #8d8f90; 
@@ -72,7 +68,7 @@ a:focus, a:hover {
 }
 
 .page-header { 
-    background: url(./dark-red-night-sky-and-gold-stars-background-vector-18577762.jpg)no-repeat; 
+    background: url()no-repeat; 
     position: relative; 
     background-size: cover; 
 }
