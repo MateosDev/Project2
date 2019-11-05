@@ -1,0 +1,601 @@
+/* navbar */
+.navbar {
+    padding: 0px;
+    height: 51px;
+}
+.bg-light{
+    background-color: rgb(27, 109, 109)!important;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: lightgrey;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: lightgrey;
+    font-family: 'Nanum Myeongjo', serif;
+}
+/* index */
+body { 
+    -webkit-font-smoothing: antialiased; 
+    text-rendering: optimizeLegibility; 
+    font-family: 'Overpass', sans-serif; 
+    letter-spacing: 0px; 
+    font-size: 17px; 
+    color: #8d8f90; 
+    font-weight: 400; 
+    line-height: 32px; 
+    background-color: #edefef; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color: #25292a; 
+    margin: 0px 0px 10px 0px; 
+    font-family: 'Overpass', sans-serif; 
+    font-weight: 700; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+}
+
+h1 { 
+    font-size: 34px; 
+}
+
+h2 { 
+    font-size: 28px; 
+    line-height: 38px; 
+}
+
+h3 { 
+    font-size: 22px; 
+    line-height: 32px; 
+}
+
+h4 { 
+    font-size: 20px; 
+}
+
+h5 { 
+    font-size: 17px; 
+}
+
+h6 { 
+    font-size: 12px;
+}
+
+p { 
+    margin: 0 0 20px; 
+    line-height: 1.7; 
+}
+
+.card-section {
+    background-color:rgb(27, 109, 109);
+}
+
+p:last-child { 
+    margin: 0px; 
+}
+
+a { 
+    text-decoration: none; 
+    color: #8d8f90; 
+    -webkit-transition: all 0.3s; 
+    -moz-transition: all 0.3s; 
+    transition: all 0.3s; 
+}
+
+a:focus, a:hover {
+     text-decoration: none; 
+     color: #f85759; 
+}
+
+.page-header { 
+    /* background-color:darkred; */
+    background: url(../images/annette-sousa-HW-ep3fC4Kc-unsplash.jpg)no-repeat;
+    background-size: 1583px 561px; 
+    position: relative; 
+    /* background-size: cover;  */
+}
+
+/* .page-caption { 
+    padding-top: 170px; 
+    padding-bottom: 174px; 
+} */
+
+.page-title { 
+    font-size: 46px; 
+    line-height: 1; 
+    color: #fff; 
+    font-weight: 600; 
+    text-align: center; 
+}
+
+.card-section { 
+    position: relative;
+    bottom: 60px; 
+}
+
+.card-block { 
+    padding: 80px; 
+}
+
+.section-title { 
+    margin-bottom: 60px; 
+}
+
+.list-group-item {
+    line-height: 2.5;
+}
+
+img {
+
+}
+
+#footer {
+    background-color: rgb(27, 109, 109);
+}
+/* profile */
+/* #profile {
+    background: linear-gradient(90deg, #e8e8e8 50%, #3d009e 50%);
+}
+
+.portfolio {
+    padding:6%;
+    text-align:center;
+}
+
+.heading {
+    background: #fff;
+    padding: 1%;
+    text-align: left;
+    box-shadow: 0px 0px 4px 0px #545b62;
+}
+
+.heading img {
+    width: 10%;
+}
+
+.bio-info {
+    padding: 5%;
+    background:#fff;
+    box-shadow: 0px 0px 4px 0px #b0b3b7;
+}
+
+.name {
+    font-family: 'Charmonman', cursive;
+    font-weight:600;
+}
+
+.bio-image {
+    text-align:center;
+}
+
+.bio-image img {
+    border-radius:50%;
+}
+
+.bio-content {
+    text-align:left;
+}
+
+.bio-content p {
+    font-weight:600;
+    font-size:30px;
+} */
+
+/* edit profile */
+/* #editbody {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.emp-profile {
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    width: 70%;
+    height: 100%;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.profile-head h5 {
+    color: #333;
+}
+
+.profile-head h6 {
+    color: #0062cc;
+}
+
+.profile-edit-btn {
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.proile-rating {
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+
+.proile-rating span {
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile-head .nav-tabs {
+    margin-bottom:5%;
+}
+
+.profile-head .nav-tabs .nav-link {
+    font-weight:600;
+    border: none;
+}
+
+.profile-head .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+
+.profile-work {
+    padding: 14%;
+    margin-top: -15%;
+}
+
+.profile-work p {
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.profile-work a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-work ul {
+    list-style: none;
+}
+
+.profile-tab label {
+    font-weight: 600;
+}
+
+.profile-tab p {
+    font-weight: 600;
+    color: #0062cc;
+} */
+
+/* sign up */
+/* #signup {
+    background-image:url(./dark-red-night-sky-and-gold-stars-background-vector-18577762.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    overflow:auto;
+}
+
+.container {
+   font-family:Roboto,sans-serif;
+     background-image:url(./30daysreplay-pr-marketing-9rZuPJmTMZs-unsplash.jpg) ;
+    border-style: 1px solid grey;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 67px;
+  box-shadow: 2px 5px 5px 0px #eee;
+    max-width: 500px;
+    padding-top: 10px;
+    height: 363px;
+    margin-top: 166px;
+}
+
+.lastname{
+    margin-left: 1px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.firstname {
+    margin-left: 1px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+}
+
+#lname {
+    margin-top:5px;
+}
+
+.heading {
+    text-decoration:bold;
+    text-align : center;
+    font-size:30px;
+    color:#F96;
+    padding-top:10px;
+}
+
+#email {
+    margin-top: 5px;
+}
+
+.mail {
+    margin-left: 44px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.pass {
+    color: white;
+    margin-top: 9px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 6px;
+    margin-top: 9px;
+}
+
+#password {
+margin-top: 6px;
+}
+
+.pno {
+    font-size: 18px;
+    margin-left: -13px;
+    margin-top: 10px;
+    color: #ff9;
+}	
+
+.gender {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-left: 28px;
+    margin-top: 8px;
+}
+
+.col-xs-4.male {
+    color: white;
+    font-size: 13px;
+    margin-top: 9px;
+    padding-bottom: 16px;
+}
+
+.col-xs-4.female {
+    color: white;
+    font-size: 13px;
+    margin-top: 9px;
+    padding-bottom: 16px;
+    padding-right: 95px;
+}	
+
+.sbutton {
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: #080808;
+    width: 32%;
+    margin-left: 41%;
+    margin-top: 16px;
+    box-shadow: 0px 2px 2px 0px white;
+  }
+
+.btn.btn-warning:hover {
+   box-shadow: 2px 1px 2px 3px #99ccff;
+   background:#5900a6;
+   color:#fff;
+   transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
+} */
+
+/* log in */
+/* @import url('https://fonts.googleapis.com/css?family=Mukta');
+#login {
+  font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+}
+
+a {
+  text-decoration:none;
+  color:#444444;
+}
+
+.login-reg-panel {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    background-color: rgba(236, 48, 20, 0.9);
+}
+
+.white-panel {
+    background-color: rgba(255,255, 255, 1);
+    height:500px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 15px 9px #00000096;
+}
+
+.login-reg-panel input[type="radio"] {
+    position:relative;
+    display:none;
+}
+
+.login-reg-panel {
+    color:#B8B8B8;
+}
+
+.login-reg-panel #label-login, .login-reg-panel #label-register {
+    border:1px solid #9E9E9E;
+    padding:5px 5px;
+    width:150px;
+    display:block;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight: 600;
+    font-size: 18px;
+} 
+
+.login-info-box {
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+}
+
+.register-info-box {
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:left;
+    
+}
+
+.right-log {
+    right:50px !important;
+}
+
+.login-show, .register-show { 
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:#242424;
+    text-align:left;
+    padding:50px;
+}
+
+.show-log-panel {
+    display:block;
+    opacity:0.9;
+}
+
+.login-show input[type="text"], .login-show input[type="password"] {
+    width: 100%;
+    display: block;
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+.login-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+
+.login-show a {
+    display:inline-block;
+    padding:10px 0;
+}
+
+.register-show input[type="text"], .register-show input[type="password"] {
+    width: 100%;
+    display: block;
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+.register-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+
+.credit {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color: #3B3B25;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+
+
+a {
+  text-decoration:none;
+  color:#2c7715;
+}
+  */

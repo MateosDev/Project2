@@ -4,10 +4,13 @@ var axios = require("axios");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
+
+
     db.User.findAll({}).then(function(dbUser) {
       res.render("index", {
         msg: "Welcome!",
         examples: dbUser
+
       });
     });
   });
@@ -292,17 +295,23 @@ module.exports = function(app) {
     });
   });
 
+
+
   app.get("/login", function(req, res) {
-    res.render("login");
+      res.render("login");
+  });
+
+  app.get("/signup", function(req, res) {
+    res.render("signup");
 });
-app.get("/signup", function(req, res) {
-  res.render("signup");
-});
+
 app.get("/profile", function(req, res) {
-res.render("profile");
+  res.render("profile");
 });
+
 app.get("/editprofile", function(req, res) {
-res.render("editprofile");
+  res.render("editprofile");
+
 });
 
   // Render 404 page for any unmatched routes

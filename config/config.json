@@ -1,20 +1,16 @@
 {
     "development": {
       "username": "root",
-
-      "password": "Section.80",
+      "password": "",
       "database": "people_db",
-
       "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-
-      "password": "Section.80",
-
+      "password": null,
       "database": "testdb",
-      "host": "localhost",
+      "host": "localhost3000",
       "dialect": "mysql",
       "logging": false
     },
