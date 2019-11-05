@@ -1,5 +1,22 @@
 /* navbar */
+.navbar {
+    padding: 0px;
+    height: 51px;
+}
+.bg-light{
+    background-color: rgb(27, 109, 109)!important;
+    font-family: 'Nanum Myeongjo', serif;
+}
 
+.navbar-light .navbar-nav .active>.nav-link {
+    color: lightgrey;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: lightgrey;
+    font-family: 'Nanum Myeongjo', serif;
+}
 /* index */
 body { 
     -webkit-font-smoothing: antialiased; 
@@ -53,6 +70,10 @@ p {
     line-height: 1.7; 
 }
 
+.card-section {
+    background-color:rgb(27, 109, 109);
+}
+
 p:last-child { 
     margin: 0px; 
 }
@@ -71,15 +92,17 @@ a:focus, a:hover {
 }
 
 .page-header { 
-    background: url(../images/laura-skinner-4RNvfpWOcak-unsplash.jpg)no-repeat; 
+    /* background-color:darkred; */
+    background: url(../images/annette-sousa-HW-ep3fC4Kc-unsplash.jpg)no-repeat;
+    background-size: 1583px 561px; 
     position: relative; 
-    background-size: cover; 
+    /* background-size: cover;  */
 }
 
-.page-caption { 
+/* .page-caption { 
     padding-top: 170px; 
     padding-bottom: 174px; 
-}
+} */
 
 .page-title { 
     font-size: 46px; 
@@ -104,10 +127,17 @@ a:focus, a:hover {
 
 .list-group-item {
     line-height: 2.5;
-  }
+}
 
+img {
+
+}
+
+#footer {
+    background-color: rgb(27, 109, 109);
+}
 /* profile */
-#profile {
+/* #profile {
     background: linear-gradient(90deg, #e8e8e8 50%, #3d009e 50%);
 }
 
@@ -153,10 +183,10 @@ a:focus, a:hover {
 .bio-content p {
     font-weight:600;
     font-size:30px;
-}
+} */
 
 /* edit profile */
-#editbody {
+/* #editbody {
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
 }
 
@@ -269,10 +299,10 @@ a:focus, a:hover {
 .profile-tab p {
     font-weight: 600;
     color: #0062cc;
-}
+} */
 
 /* sign up */
-#signup {
+/* #signup {
     background-image:url(./dark-red-night-sky-and-gold-stars-background-vector-18577762.jpg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -395,10 +425,10 @@ margin-top: 6px;
    background:#5900a6;
    color:#fff;
    transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
-}
+} */
 
 /* log in */
-@import url('https://fonts.googleapis.com/css?family=Mukta');
+/* @import url('https://fonts.googleapis.com/css?family=Mukta');
 #login {
   font-family: 'Mukta', sans-serif;
 	height:100vh;
@@ -568,4 +598,4 @@ a {
   text-decoration:none;
   color:#2c7715;
 }
- 
+  */
