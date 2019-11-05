@@ -16,7 +16,7 @@ module.exports = function(app) {
   });
 
   // Load example page and pass in an example by id
-  app.get("/user/:id", function(req, res) {
+  app.get("/profile/:id", function(req, res) {
     db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
       // res.render is what loads the info to the handlebars file (front-end)
 
@@ -35,7 +35,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -58,7 +58,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -81,7 +81,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -104,7 +104,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -126,7 +126,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -148,7 +148,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -171,7 +171,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -193,7 +193,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -215,7 +215,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -237,7 +237,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -259,7 +259,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -282,7 +282,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
