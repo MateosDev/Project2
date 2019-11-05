@@ -1,5 +1,5 @@
 {
-  "name": "Project2",
+  "name": "project2",
   "version": "1.0.0",
   "description": "Group Project 2 - Daniel, Odufa, Maliah, and Oscar Name ideas - Hookt, Hukt,",
   "main": "server.js",
@@ -30,6 +30,7 @@
     "express-handlebars": "^3.1.0",
     "mocha": "^6.2.2",
     "mysql2": "^2.0.0",
+    "path": "^0.12.7",
     "request": "^2.88.0",
     "sequelize": "^5.21.2"
   }

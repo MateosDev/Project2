@@ -1,24 +1,24 @@
 {
-    "development": {
-      "username": "root",
-      "password": "",
-      "database": "people_db",
-      "host": "localhost",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-      "password": null,
-      "database": "testdb",
-      "host": "localhost3000",
-      "dialect": "mysql",
-      "logging": false
-    },
-    "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql"
-    }
-
-  }
+  "development": {
   
-
+    "host": "localhost",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": "Kisses@12",
+    "database": "people_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": "Kisses@12",
+    "database": "people_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
