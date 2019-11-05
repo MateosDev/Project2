@@ -296,6 +296,7 @@ module.exports = function(app) {
   });
 
 
+
   app.get("/login", function(req, res) {
       res.render("login");
   });
@@ -310,6 +311,7 @@ app.get("/profile", function(req, res) {
 
 app.get("/editprofile", function(req, res) {
   res.render("editprofile");
+
 });
 
   // Render 404 page for any unmatched routes
