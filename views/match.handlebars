@@ -1,15 +1,11 @@
-<h1 id="welcome">Welcome, {{userdata.first_name}}</h1>
-<h3 id="yourSign">Check out your daily horoscope for {{userdata.astrology_sign}}</h3>
 
-
-</h3>
 
 <div class="container portfolio" id="profile">
     <div class="row">
         <div class="col-md-12">
-            <div class="heading">
-                <img src="https://image.ibb.co/cbCMvA/logo.png" />
-            </div>
+            {{!-- <div class="heading">
+                <img src="https://image.ibb.co/cbCMvA/logo.png">
+            </div> --}}
         </div>
     </div>
     <div class="bio-info">
@@ -18,16 +14,31 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="bio-image">
-                            <img src="https://image.ibb.co/f5Kehq/bio-image.jpg" alt="image" />
+                    <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" width="550" alt="lovelace">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="bio-content">
-                    <h1 id="userName">Hi there, I'm {{userdata.first_name}}</h1>
-                    <h3 id="userSign">I'm a {{userdata.astrology_sign}}</h3>
-                    <h3 id="bio">I enjoy {{userdata.user_bio}}</h3>
+                    <h1 id="welcome">Meet, {{userdata.first_name}}</h1>
+                    <h3 id="matchSign">{{userdata.first_name}} is {{userdata.age}} and is a {{userdata.astrology_sign}}</h3>
+                    <h3 id="matchMonth">She was born in {{userdata.birth_month}}</h3>
+                    <h3 id="matchLocation">{{userdata.first_name}} lives in {{userdata.user_city}}</h3>
+                    <h3 id="matchBio">and enjoys {{userdata.user_bio}}</h3>
+
+{{!-- <h3 id="yourSign">Check out your daily horoscope for {{userdata.astrology_sign}}</h3>
+<h3 id="horoscope">{{yourHoro.description}}</h3> --}}
+{{!-- <h3 id="dateMatches">
+    Your HOOKt matches for today are
+    {{#each matches}}
+<div>
+    <li>{{this.first_name}}</li>
+    <a href='/match/3'>View Profile</a>
+</div>
+{{/each}}
+
+</h3> --}}
                 </div>
             </div>
         </div>
