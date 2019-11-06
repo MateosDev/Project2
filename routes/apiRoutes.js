@@ -1,5 +1,5 @@
 var db = require("../models");
-var sdkClient = require('./horoscope');
+
 
 
 module.exports = function(app) {
