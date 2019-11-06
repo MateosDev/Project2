@@ -15,6 +15,13 @@ module.exports = function(app) {
     });
   });
 
+  // this will lead joseph to roxxane
+  app.get("/match/:id", function(req, res) {
+    db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
+      res.render("match",{userdata: dbUser})
+    })
+  })
+
   // Load example page and pass in an example by id
   app.get("/profile/:id", function(req, res) {
     db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
@@ -26,6 +33,7 @@ module.exports = function(app) {
           db.User.findAll({
             where: { astrology_sign: ["aries", "leo", "sagittarius"] }
           }).then(function(matches) {
+            console.log
             // res.render is what loads the info to the handlebars file (front-end)
             axios
               .post(
