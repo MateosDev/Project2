@@ -3,7 +3,7 @@ var axios = require("axios");
 
 module.exports = function(app) {
   // Load index page
-  app.get("/index", function(req, res) {
+  app.get("/", function(req, res) {
     db.User.findAll({}).then(function(dbUser) {
       res.render("index", {
         msg: "Welcome!",
