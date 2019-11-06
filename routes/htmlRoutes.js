@@ -3,9 +3,7 @@ var axios = require("axios");
 
 module.exports = function(app) {
   // Load index page
-  app.get("/", function(req, res) {
-
-
+  app.get("/index", function(req, res) {
     db.User.findAll({}).then(function(dbUser) {
       res.render("index", {
         msg: "Welcome!",
@@ -15,8 +13,15 @@ module.exports = function(app) {
     });
   });
 
+  // this will lead joseph to roxxane
+  app.get("/match/:id", function(req, res) {
+    db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
+      res.render("match",{userdata: dbUser})
+    })
+  })
+
   // Load example page and pass in an example by id
-  app.get("/user/:id", function(req, res) {
+  app.get("/profile/:id", function(req, res) {
     db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
       // res.render is what loads the info to the handlebars file (front-end)
 
@@ -26,6 +31,7 @@ module.exports = function(app) {
           db.User.findAll({
             where: { astrology_sign: ["aries", "leo", "sagittarius"] }
           }).then(function(matches) {
+            console.log
             // res.render is what loads the info to the handlebars file (front-end)
             axios
               .post(
@@ -35,7 +41,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -58,7 +64,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -81,7 +87,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -104,7 +110,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -126,7 +132,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -148,7 +154,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -171,7 +177,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -193,7 +199,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -215,7 +221,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -237,7 +243,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -259,7 +265,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -282,7 +288,7 @@ module.exports = function(app) {
               )
               .then(function(response) {
                 var horoscope = response.data;
-                res.render("user", {
+                res.render("profile", {
                   userdata: dbUser,
                   matches: matches,
                   yourHoro: horoscope
@@ -294,6 +300,7 @@ module.exports = function(app) {
       }
     });
   });
+
 
 
   app.get("/login", function(req, res) {
@@ -310,6 +317,7 @@ app.get("/profile", function(req, res) {
 
 app.get("/editprofile", function(req, res) {
   res.render("editprofile");
+
 });
 
   // Render 404 page for any unmatched routes

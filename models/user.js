@@ -3,7 +3,9 @@ module.exports = function(sequelize, DataTypes) {
       first_name: DataTypes.STRING,
       age: DataTypes.INTEGER,
       astrology_sign: DataTypes.STRING,
-      quiz_answers: DataTypes.STRING,
+      birth_month: DataTypes.STRING,
+      user_bio: DataTypes.STRING,
+      user_city: DataTypes.STRING,
     });
     return User;
   };
